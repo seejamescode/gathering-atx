@@ -48,22 +48,37 @@ strong {
 }
 
 .image-side {
-  width: 75%;
+  width: 100%;
 }
 
 .tagline {
   max-width: 25rem;
 }
 
+.section-tagline > .tagline-container {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+
 @media (min-width: 650px) {
-  .section-tagline {
-    flex-direction: row;
+  .image-container {
+    display: inline-block;
+    max-width: 50%;
+    margin-right: 2rem;
   }
 
-  .image-side {
-    margin-right: 2rem;
-    width: 50%;
+  .section-tagline {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
+}
+
+.section-max {
+  max-width: 50rem;
+  width: 100%;
 }
 
 .video-responsive {
@@ -86,6 +101,14 @@ strong {
   -webkit-backface-visibility: hidden; /* Fix for transition flickering */
 }
 
+.p-first {
+  margin-top: 0;
+}
+
+.p-last {
+  margin-bottom: 0;
+}
+
 .section-links {
   justify-content: space-between;
   padding-bottom: 0;
@@ -94,6 +117,7 @@ strong {
 .section-signup a,
 .section-contact a {
   margin-bottom: 2rem;
+  max-width: 28.375rem;
 }
 
 .section-signup,
@@ -101,7 +125,7 @@ strong {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  max-width: 40rem;
+  max-width: 50rem;
   width: 100%;
 }
 
@@ -141,14 +165,28 @@ strong {
   outline-width: 0.5rem;
 }
 
-.section-contact a {
+a.red-small {
   background: #ad3f34;
   color: #cfc3b5;
   outline-color: #cfc3b5;
 }
 
+@media (min-width: 650px) {
+  a.red-small {
+    background: #cfc3b5;
+    color: #ad3f34;
+    outline-color: #ad3f34;
+  }
+
+  a.red-large {
+    background: #ad3f34;
+    color: #cfc3b5;
+    outline-color: #cfc3b5;
+  }
+}
+
 .footer {
-  margin-top: -20vw;
+  margin-top: -15vw;
   position: relative;
 }
 
@@ -188,11 +226,16 @@ strong {
 }
 
 .letter-spacing-e {
-  letter-spacing: 0.18rem;
-  margin-left: 0.2rem;
+  letter-spacing: 0.05rem;
+  margin-left: -0.05rem;
 }
 
 .letter-spacing-f {
   letter-spacing: 0.13rem;
   margin-left: 0.05rem;
+}
+
+.letter-spacing-g {
+  letter-spacing: 0.38rem;
+  margin-left: 0.25rem;
 }
