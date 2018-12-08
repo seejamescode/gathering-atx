@@ -109,6 +109,10 @@ strong {
   margin-bottom: 0;
 }
 
+.center {
+  text-align: center;
+}
+
 .section-links {
   justify-content: space-between;
   padding-bottom: 0;
