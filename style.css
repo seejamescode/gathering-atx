@@ -42,9 +42,13 @@ strong {
 }
 
 .logo {
-  margin-top: 10vh;
+  margin: 10vh 0;
   min-width: 10rem;
   width: 33%;
+}
+
+.inline-link {
+  color: inherit;
 }
 
 .image-side {
@@ -113,9 +117,12 @@ strong {
   text-align: center;
 }
 
+.header {
+  margin-top: 0;
+}
+
 .section-links {
   justify-content: space-between;
-  padding-bottom: 0;
 }
 
 .section-signup a,
@@ -135,7 +142,7 @@ strong {
 
 .section-signup a,
 .section-contact a {
-  background: #cfc3b5;
+  background: #e7e4da;
   box-sizing: border-box;
   color: #ad3f34;
   line-height: 1.25;
@@ -171,21 +178,21 @@ strong {
 
 a.red-small {
   background: #ad3f34;
-  color: #cfc3b5;
-  outline-color: #cfc3b5;
+  color: #e7e4da;
+  outline-color: #e7e4da;
 }
 
 @media (min-width: 650px) {
   a.red-small {
-    background: #cfc3b5;
+    background: #e7e4da;
     color: #ad3f34;
     outline-color: #ad3f34;
   }
 
   a.red-large {
     background: #ad3f34;
-    color: #cfc3b5;
-    outline-color: #cfc3b5;
+    color: #e7e4da;
+    outline-color: #e7e4da;
   }
 }
 
@@ -211,7 +218,7 @@ a.red-small {
 }
 
 .letter-spacing-a {
-  letter-spacing: 0.12rem;
+  letter-spacing: 0.27rem;
   line-height: 1.5;
 }
 
@@ -242,4 +249,13 @@ a.red-small {
 .letter-spacing-g {
   letter-spacing: 0.38rem;
   margin-left: 0.25rem;
+}
+
+.letter-spacing-h {
+  letter-spacing: 0.28rem;
+  margin-left: 0.4rem;
+}
+
+.letter-spacing-i {
+  letter-spacing: 0.1rem;
 }
