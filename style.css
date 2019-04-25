@@ -6,6 +6,10 @@ body {
   margin: 0;
 }
 
+header {
+  font-size: 30px;
+}
+
 strong {
   font-weight: 900;
 }
